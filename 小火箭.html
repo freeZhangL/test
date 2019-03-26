@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            height: 4000px;
+        }
+
+        img {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+<img src="images/qq.png" alt="">
+
+
+<script src="lib/jquery/jquery.js"></script>
+<script>
+    $(function () {
+        $("img").click(function () {
+            $("html").animate({"scrollTop": 0}, 1000, function () {
+                console.log("年华");
+            });
+        });
+        console.log($(window).height());
+        console.log($(window).width());
+    });
+</script>
+</body>
+</html>

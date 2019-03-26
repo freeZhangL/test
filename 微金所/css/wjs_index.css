@@ -1,0 +1,258 @@
+/*头部样式*/
+.wjs_header {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #cccccc;
+}
+.wjs_header .row {
+  text-align: center;
+  height: 100%;
+}
+.wjs_header .row > div:nth-of-type(-n+3) {
+  border-right: 1px solid #cccccc;
+  height: 100%;
+}
+.wjs_header .row > div:nth-of-type(-n+3) > .wjs_code {
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+}
+.wjs_header .row > div:nth-of-type(-n+3) > .wjs_code > img {
+  display: none;
+  position: absolute;
+  top: 49px;
+  left: 50%;
+  z-index: 20;
+  border: 1px solid #cccccc;
+  transform: translateX(-50%);
+  border-top: none;
+}
+.wjs_header .row > div:nth-of-type(-n+3) > .wjs_code:hover > img {
+  display: block;
+}
+.wjs_header .row > div:nth-last-of-type(1) > .btn-danger {
+  background: #e92322;
+  border-color: #e92322;
+}
+.wjs_header .row > div:nth-last-of-type(1) > .btn {
+  padding: 3px 15px;
+}
+.wjs_header .row > div:nth-last-of-type(1) > .btn-link {
+  color: #333333;
+}
+.wjs_header .row > div:nth-last-of-type(1) > .btn-link:hover {
+  text-decoration: none;
+}
+/*导航样式*/
+.wjs_nav.navbar {
+  margin-bottom: 0px;
+}
+.wjs_nav .navbar-brand {
+  height: 80px;
+  line-height: 50px;
+}
+.wjs_nav .navbar-brand .wjs_icon {
+  font-size: 40px;
+}
+.wjs_nav .navbar-brand > span:first-of-type {
+  color: #e92322;
+}
+.wjs_nav .navbar-brand > span:last-of-type {
+  color: #333333;
+}
+.wjs_nav .navbar-nav li a {
+  line-height: 50px;
+  font-size: 16px;
+}
+.wjs_nav .navbar-nav li > a:hover,
+.wjs_nav .navbar-nav li a:focus {
+  color: #777777;
+  border-bottom: 3px solid #e92322;
+}
+.wjs_nav .navbar-nav .active > a,
+.wjs_nav .navbar-nav .active a:hover,
+.wjs_nav .navbar-nav .active a:focus {
+  background-color: transparent;
+  border-bottom: 3px solid #e92322;
+}
+.wjs_nav .navbar-toggle {
+  margin-top: 23px;
+}
+/*轮播图*/
+.wjs_banner .moblie_img {
+  display: block;
+  width: 100%;
+}
+.wjs_banner .moblie_img img {
+  display: block;
+  width: 100%;
+}
+.wjs_banner .pc {
+  display: block;
+  width: 100%;
+  height: 410px;
+  background-position: center center;
+  background-size: cover;
+}
+/*信息*/
+.wjs_info {
+  padding: 30px;
+}
+.wjs_info .wjs_icon {
+  font-size: 30px;
+}
+.wjs_info .row > div {
+  margin-top: 20px;
+}
+.wjs_info .row > div > a:hover {
+  color: #e92322;
+}
+.wjs_info .row .media {
+  padding: 0 18%;
+}
+/*预约块*/
+.wjs_reverse {
+  height: 60px;
+  line-height: 60px;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+.wjs_reverse .wjs_icon {
+  font-size: 18px;
+}
+.wjs_reverse .reverse_now {
+  color: #e92322;
+  border-bottom: 1px dashed #e92322;
+}
+/*产品快*/
+.wjs_product {
+  clear: both;
+  background-color: #eeeeee;
+  padding: 20px;
+  /*导航样式*/
+  /*产品详细*/
+}
+.wjs_product .tabs_parent {
+  width: 100%;
+  overflow: hidden;
+}
+.wjs_product .nav-tabs > li {
+  margin-bottom: 0px;
+  padding: 0 15px;
+}
+.wjs_product .nav-tabs > li > a {
+  line-height: 50px;
+  border-radius: 0px;
+  border: none;
+  background: none;
+}
+.wjs_product .nav-tabs > li > a:hover {
+  border-bottom: 3px solid #e92322;
+}
+.wjs_product .nav-tabs > li.active > a,
+.wjs_product .nav-tabs > li.active a:hover,
+.wjs_product .nav-tabs > li.active a:focus {
+  border: none;
+  border-radius: 0px;
+  background: #eeeeee;
+  border-bottom: 3px solid #e92322;
+}
+.wjs_product .wjs_pBox {
+  height: 150px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  position: relative;
+}
+.wjs_product .wjs_pBox > .wjs_pLeft {
+  margin-right: 100px;
+  height: 150px;
+  font-size: 14px;
+}
+.wjs_product .wjs_pBox > .wjs_pLeft > p {
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  padding-top: 8px;
+  margin-bottom: 3px;
+}
+.wjs_product .wjs_pBox > .wjs_pLeft .row div:nth-of-type(even) {
+  text-align: right;
+  padding-right: -10px;
+}
+.wjs_product .wjs_pBox > .wjs_pRight {
+  float: left;
+  width: 100px;
+  height: 150px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-left: 1px dashed #cccccc;
+  text-align: center;
+  padding-top: 30px;
+}
+.wjs_product .wjs_pBox > .wjs_pRight > .wjs_tip {
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.wjs_product .wjs_pBox > .wjs_pRight > .wjs_tip > span:nth-of-type(1) {
+  cursor: pointer;
+  color: red;
+  border: 1px solid red;
+}
+.wjs_product .wjs_pBox > .wjs_pRight > .wjs_tip > span:last-of-type {
+  cursor: pointer;
+  color: blue;
+  border: 1px solid blue;
+}
+.wjs_product .wjs_pBox > .wjs_pRight > b {
+  font-size: 40px;
+  color: #e92322;
+}
+.wjs_product .wjs_pBox > .wjs_pRight > sub {
+  color: #e92322;
+  bottom: 0;
+}
+.wjs_product .wjs_pBox > .wjs_pRight::before,
+.wjs_product .wjs_pBox > .wjs_pRight::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: #eeeeee;
+  position: absolute;
+  left: -5px;
+}
+.wjs_product .wjs_pBox > .wjs_pRight::before {
+  top: -5px;
+  box-shadow: 0px -1px 1px #ddd inset;
+}
+.wjs_product .wjs_pBox > .wjs_pRight::after {
+  bottom: -5px;
+  box-shadow: 0px 2px 1px #dddddd inset;
+}
+.wjs_product .wjs_pBox.active {
+  background: #e92322;
+}
+.wjs_product .wjs_pBox.active .wjs_pRight > b,
+.wjs_product .wjs_pBox.active .wjs_pRight sub,
+.wjs_product .wjs_pBox.active .wjs_pRight p {
+  color: #ffff;
+}
+.wjs_product .wjs_pBox.active .wjs_pLeft {
+  color: #ffffff;
+  position: relative;
+}
+.wjs_product .wjs_pBox.active .wjs_pLeft::before {
+  content: "\e915";
+  font-family: "wjs";
+  position: absolute;
+  left: 0;
+  top: -5px;
+  font-size: 25px;
+}
+/*# sourceMappingURL=wjs_index.css.map */

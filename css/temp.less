@@ -1,0 +1,55 @@
+/*注释*/
+//这也是样式,但是不会进行编译
+/*变量  @变量名:值;*/
+@baseColor:#e92322;
+a{
+  color:@baseColor;
+}
+//.addRadius{
+//  border-radius: 10px;
+//  -webkit-border-radius: 10px;
+//  -moz-border-radius: 10px;
+//}
+.addRadius(@r:10px){
+  border-radius: @r;
+  -webkit-border-radius: @r;
+  -moz-border-radius: @r;
+}
+
+div{
+  width: 200px;
+  height: 200px;
+  .addRadius(5px)
+}
+/*嵌套*/
+.jd_header{
+ width: 100%;
+  height: 200px;
+  .addRadius(4px);
+  >div{
+    width: 100%;
+    &::before{
+      content: "";
+    }
+    >a{
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+
+    >h3{
+      width: 20px;
+    }
+    >ul{
+      list-style: none;
+    }
+  }
+
+}
+
+/*.jd_header{}
+.jd_header>div{}
+.jd_header>div>h3{}
+.jd_header>div>h3::before{}
+*/

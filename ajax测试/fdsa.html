@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            margin: 40px auto;
+            background: lightblue;
+            background: url("abc.png") no-repeat;
+            background-position: center center;
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+
+<div></div>
+
+<script>
+    // var abc={
+    //     zx: function (len) {
+    //         len = len || 8;
+    //         var $chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678';
+    //         var maxPos = $chars.length;
+    //         var pwd = '';
+    //         for (var i = 0; i < len; i++) {
+    //             pwd += $chars.charAt(Math.floor(Math.random() * maxPos));
+    //         }
+    //         return pwd;
+    //     }
+    // }
+
+
+    function randomString(len) {
+        len = len || 8;
+        var $chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678';
+        var maxPos = $chars.length;
+        var pwd = '';
+        for (var i = 0; i < len; i++) {
+            pwd += $chars.charAt(Math.floor(Math.random() * maxPos));
+        }
+        return pwd;
+    }
+    var openid = randomString();
+    localStorage.setItem('wenjuan', openid);
+    btn.onclick(function () {
+        
+    })
+    if (wenjuan.openid = localStorage.getItem("wenjuan")) {
+        alert('您已经参与抽奖')
+    }
+
+
+</script>
+</body>
+</html>

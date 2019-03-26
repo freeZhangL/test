@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1">
+    <title>测一测你的颜值</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/ball-spin-fade-loader.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/loading-all.css"/>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/jweixin-1.2.0.js"></script>
+</head>
+<body>
+    <div id="wrap" style="display: none"></div>         <!--loading效果 -->
+    <audio id="audio">
+        <source src="img/moment.mp3" type="audio/mp3"/>
+    </audio>
+    <div class="background">
+        <img class="buttonTop" src="img/kaishi.png">
+    </div>
+
+    <div class="photograph">
+        <div id="picture"></div>
+        <img class="buttonBottom" src="img/shangchuan.png">
+    </div>
+
+    <input id="pic" type="file" name = 'pic' accept = "image/*" onchange = "paizhao.selectFile()" style="opacity: 0"/>
+    <img class="card" src="img/1.jpg" style="display: none">
+</body>
+<script src="./js/loading.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/index.js"></script>
+<script src="js/share.js"></script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+    用户名:
+    <input type="text" name="username" id="username"><span id="info"></span>
+    <br>密码:
+    <input type="text" name="password" id="password">
+    <input type="button" value="登录" id="btn">
+
+</form>
+
+<script src="template.js"></script>
+<script>
+    var btn = document.getElementById('btn')
+    btn.onclick = function () {
+        var uname = document.getElementById('username')
+        var pw = document.getElementById('password')
+
+        //1 创建xhr对象
+        var xhr = null;
+        if (window.XMLHttpRequest) {
+            xhr = new XMLHttpRequest()
+        } else {
+            xhr = new ActiveXObject('Microsoft')
+        }
+        // 2准备发发送
+        var param = 'username' + uname + 'password' + pw;
+        xhr.open('get', '03getphp?' + encodeURI(param), true);
+        xhr.send(null)
+        //    3执行发送
+        xhr.send(null)
+        // 4指定回调函数
+        xhr.onreadystatechange = function () {
+            if (xhr.readystate == 4) {
+                if (xhr.status == 200) {
+                    alert(xhr.responseText);
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>

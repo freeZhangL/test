@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+
+	<script src='node_modules/art-template/lib/compile/template-web.js'></script>
+	<script type='text/html' id=tpl>
+		<!DOCTYPE html>
+			<html lang="en">
+		<head>
+		<meta charset="UTF-8">
+		<title>{{name}}</title>
+		</head>
+		<body>
+	
+		</body>
+		</html>
+	</script>
+	<script>
+		var ret=template('tpl',{
+			name:"zhangsanlisiwnagwu"
+		})
+		console.log(ret)
+	</script>
+
+</body>
+</html>

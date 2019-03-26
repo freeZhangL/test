@@ -1,0 +1,44 @@
+/*注释*/
+/*变量  @变量名:值;*/
+a {
+  color: #e92322;
+}
+div {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/*嵌套*/
+.jd_header {
+  width: 100%;
+  height: 200px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+.jd_header > div {
+  width: 100%;
+}
+.jd_header > div::before {
+  content: "";
+}
+.jd_header > div > a {
+  text-decoration: underline;
+}
+.jd_header > div > a:hover {
+  text-decoration: none;
+}
+.jd_header > div > h3 {
+  width: 20px;
+}
+.jd_header > div > ul {
+  list-style: none;
+}
+/*.jd_header{}
+.jd_header>div{}
+.jd_header>div>h3{}
+.jd_header>div>h3::before{}
+*/
+/*# sourceMappingURL=temp.css.map */
